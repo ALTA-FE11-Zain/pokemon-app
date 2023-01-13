@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { FC } from "react";
 
+import logo from "assets/pokeball.png";
+
 interface CardProps {
   url?: string;
   name?: string;
@@ -24,7 +26,7 @@ const Card: FC<CardProps> = ({ url, name, image }) => {
       onClick={() => onClickDetail()}
     >
       <figure>
-        <img src="public/logopokeball.png" alt="logo" />
+        <img src={logo} alt="logo" />
       </figure>
       <p className="m-1 case capitalize md:text-lg flex justify-center">
         {name}
