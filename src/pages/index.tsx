@@ -2,7 +2,6 @@ import {
   IoMdArrowDropleftCircle,
   IoMdArrowDroprightCircle,
 } from "react-icons/io";
-import { FaRegHeart, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -28,10 +27,6 @@ const Index = () => {
         const { results, total_pages } = data.data;
         setDatas(results);
         setTotalPage(total_pages);
-
-        console.log(data.data);
-        console.log(results);
-        console.log(results.name);
       })
       .catch((error) => {
         alert(error.toString());
@@ -87,7 +82,6 @@ const Index = () => {
               "https://pokeapi.co/api/v2/pokemon/",
               ""
             )}
-            name={data.name}
           />
         ))}
       </div>
