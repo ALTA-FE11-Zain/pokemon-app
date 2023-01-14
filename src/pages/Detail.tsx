@@ -84,7 +84,7 @@ const Detail = () => {
             <div className="p-2 border-2 rounded-lg shadow-md w-full h-fit">
               <div className="capitalize flex justify-between border-b-2 mb-2">
                 <p className="flex items-center gap-1">
-                  <img src={logo} alt="Image not found." className="w-5 h-5" />
+                  <img src={logo} alt="pokeball-logo" className="w-5 h-5" />
                   {data.name}
                 </p>
                 <div className="flex justify-end">Lv.1</div>
@@ -103,7 +103,7 @@ const Detail = () => {
               </div>
             </div>
             <div className="w-full h-fit flex justify-center">
-              <img className="w-40" src={picture} alt="Not found." />
+              <img className="w-40" src={picture} alt={data.name} />
             </div>
             <div>
               <button className="flex justify-evenly text-center p-2 border-2 rounded-lg shadow-md w-full h-fit tracking-widest duration-300 active:scale-90">
@@ -114,7 +114,7 @@ const Detail = () => {
         </section>
         <section className="flex items-center gap-3 mx-2 mt-1">
           <p className="w-3/12 flex flex-col items-center text-center gap-2">
-            <img className="w-20 my-1" src={animation} alt="Not found." />
+            <img className="w-20 my-1" src={animation} alt="pokemon.gif" />
             <span className="border-2 rounded-lg shadow-md w-full h-fit">
               fire
             </span>
