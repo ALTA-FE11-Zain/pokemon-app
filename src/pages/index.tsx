@@ -59,19 +59,17 @@ const Index = () => {
 
   return (
     <Layout>
-      <div className="btn-group flex justify-center m-10">
+      <div className="btn-group flex justify-between m-5">
         <button
-          className="px-2 btn border-transparent w-fit text-[0.75rem] bg-zinc-300 text-zinc-900 hover:bg-zinc-400 hover:border-transparent dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-700 md:text-base disabled:dark:text-zinc-800"
+          className="rounded-full w-fit h-fit text-4xl md:text-5xl duration-300 active:scale-75 disabled:text-gray-400 disabled:scale-100"
           onClick={() => prevPage()}
           disabled={currentPage === 1}
         >
           <IoMdArrowDropleftCircle />
         </button>
-        <button className="px-3 border-transparent w-fit text-[0.75rem] bg-zinc-300 text-zinc-900 hover:cursor-default hover:border-transparent dark:bg-zinc-900 dark:text-zinc-300 md:text-base">
-          {currentPage}
-        </button>
+        <p className="w-fit text-2xl md:text-4xl">{currentPage}</p>
         <button
-          className="px-2 btn border-transparent w-fit text-[0.75rem] bg-zinc-300 text-zinc-900 hover:bg-zinc-400 hover:border-transparent dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-700 md:text-base disabled:dark:text-zinc-800"
+          className="rounded-full w-fit h-fit text-4xl md:text-5xl duration-300 active:scale-75 disabled:text-gray-400 disabled:scale-100"
           onClick={() => nextPage()}
           disabled={page === totalPage}
         >
@@ -93,19 +91,17 @@ const Index = () => {
           />
         ))}
       </div>
-      <div className="btn-group flex justify-center m-10">
+      <div className="btn-group flex justify-between m-5">
         <button
-          className="px-2 btn border-transparent w-fit text-[0.75rem] bg-zinc-300 text-zinc-900 hover:bg-zinc-400 hover:border-transparent dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-700 md:text-base disabled:dark:text-zinc-800"
+          className="rounded-full w-fit h-fit text-4xl md:text-5xl duration-300 active:scale-75 disabled:text-gray-400 disabled:scale-100"
           onClick={() => prevPage()}
           disabled={currentPage === 1}
         >
           <IoMdArrowDropleftCircle />
         </button>
-        <button className="px-3 border-transparent w-fit text-[0.75rem] bg-zinc-300 text-zinc-900 hover:cursor-default hover:border-transparent dark:bg-zinc-900 dark:text-zinc-300 md:text-base">
-          {currentPage}
-        </button>
+        <p className="w-fit text-2xl md:text-4xl">{currentPage}</p>
         <button
-          className="px-2 btn border-transparent w-fit text-[0.75rem] bg-zinc-300 text-zinc-900 hover:bg-zinc-400 hover:border-transparent dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-700 md:text-base disabled:dark:text-zinc-800"
+          className="rounded-full w-fit h-fit text-4xl md:text-5xl duration-300 active:scale-75 disabled:text-gray-400 disabled:scale-100"
           onClick={() => nextPage()}
           disabled={page === totalPage}
         >
