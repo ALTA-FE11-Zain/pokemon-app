@@ -46,43 +46,43 @@ const Detail = () => {
       <div className="flex flex-col">
         <section className="flex w-full p-2 gap-3">
           <section className="w-2/5">
-            <div className="p-2 border-2 rounded-lg shadow-md w-full h-fit mb-4">
-              <p className="border-b-2 mb-3 flex justify-center">Stats</p>
+            <div className="p-2 border-2 rounded-lg shadow-md w-full h-fit mb-3">
+              <p className="border-b-2 mb-2 flex justify-center">Stats</p>
               <div className="flex justify-between">
                 <p>hp</p>
-                <p>99</p>
+                <p>78</p>
               </div>
               <div className="flex justify-between">
                 <p>att</p>
-                <p>99</p>
+                <p>84</p>
               </div>
               <div className="flex justify-between">
                 <p>def</p>
-                <p>99</p>
+                <p>78</p>
               </div>
               <div className="flex justify-between">
                 <p>special-att</p>
-                <p>99</p>
+                <p>109</p>
               </div>
               <div className="flex justify-between">
                 <p>special-def</p>
-                <p>99</p>
+                <p>85</p>
               </div>
               <div className="flex justify-between">
                 <p>speed</p>
-                <p>99</p>
+                <p>100</p>
               </div>
             </div>
-            <div className="p-2 border-2 rounded-lg shadow-md w-full h-fit">
-              <p className="border-b-2 mb-3 flex justify-center">Abilities</p>
-              <p>abilities</p>
-              <p>abilities</p>
-              <p>abilities</p>
+            <div className="p-2 border-2 rounded-lg shadow-md w-full h-[37%]">
+              <p className="border-b-2 mb-2 flex justify-center">Abilities</p>
+              <p>blaze</p>
+              <p>solar-power</p>
+              <p>full-power</p>
             </div>
           </section>
           <section className="w-3/5">
             <div className="p-2 border-2 rounded-lg shadow-md w-full h-fit">
-              <div className="capitalize flex justify-between border-b-2 mb-3">
+              <div className="capitalize flex justify-between border-b-2 mb-2">
                 <p className="flex items-center gap-1">
                   <img src={logo} alt="Image not found." className="w-5 h-5" />
                   {data.name}
@@ -102,7 +102,7 @@ const Detail = () => {
                 <p>{data.base_experience}</p>
               </div>
             </div>
-            <div className="p-2 rounded-lg w-full h-fit flex justify-center">
+            <div className="w-full h-fit flex justify-center">
               <img className="w-40" src={picture} alt="Not found." />
             </div>
             <div>
@@ -112,28 +112,29 @@ const Detail = () => {
             </div>
           </section>
         </section>
-        <section className="flex items-center gap-3 mx-2">
-          <p className="w-3/12 flex flex-col items-center text-center">
+        <section className="flex items-center gap-3 mx-2 mt-1">
+          <p className="w-3/12 flex flex-col items-center text-center gap-2">
             <img className="w-20 my-1" src={animation} alt="Not found." />
-            <span className="my-1 border-2 rounded-lg shadow-md w-full h-fit">
-              Poison
+            <span className="border-2 rounded-lg shadow-md w-full h-fit">
+              fire
             </span>
             <span className="border-2 rounded-lg shadow-md w-full h-fit">
-              Electric
+              flying
             </span>
           </p>
           <div className="w-full p-2 border-2 rounded-lg shadow-md h-fit">
-            <p className="border-b-2 mb-3 flex justify-center">Moves</p>
-            <div className="pb-1 grid grid-cols-3 gap-x-3 text-center">
-              <p>internationale</p>
-              <p>internationale</p>
-              <p>internationale</p>
-              <p>frustration</p>
-              <p>frustration</p>
-              <p>frustration</p>
-              <p>indomination</p>
-              <p>indomination</p>
-              <p>indomination</p>
+            <p className="border-b-2 mb-2 flex justify-center">Moves</p>
+            <div className="grid grid-cols-2 text-center">
+              <p>heat-crash</p>
+              <p>hurricane</p>
+              <p>confide</p>
+              <p>mystical-fire</p>
+              <p>power-up-punch</p>
+              <p>brutal-swing</p>
+              <p>breaking-swipe</p>
+              <p>scale-shot</p>
+              <p>dual-wingbeat</p>
+              <p>scorching-sands</p>
             </div>
           </div>
         </section>
